@@ -1,62 +1,76 @@
 <!DOCTYPE html>
 <html style="background-color:#0ABAB5;">
    <head>
-		<title>BONTA官方網站</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>BONTA官方網站</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
    </head>
    <body>
-	<h1> 歡迎來到BONTA官方網站 </h1>    
-	<hr>
-	<h2>產品：</h2>
-	 <ol>
-		 <ol><h2>環境控制系統</h2></ol>
-		 <ol><h2>護士呼叫系統</h2></ol>
-		<ol><h2>離床墊 (可與護士呼叫器搭配)</h2></ol>
-	 </ol>
-  <hr>
-	 <div class="content">
-		 <header>
-			 <h1>聯絡與技術支援</h1>
-		 </header>
-		 <div>
-			 <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc99RwHV7FshIBjuAdb7j3FVQoTBkgij5kvHABLdIit4jvpVg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-					 <div class="fields">
-						<div class="field half">
-						 <label for="name"><h2>姓名</label>
-						 <input type="text" name="entry.787920409" id="entry.787920409" style="font-size:28px;"/></h2>
-					 </div>
-					 <div class="field half">
-						 <label for="email"><h2>電子信箱</label>
-						 <input type="email" name="entry.909521151" id="entry.909521151" style="font-size:28px;"/></h2>
-					 </div>
-					 <div class="field">
-						 <label for="message"><h2>您的訊息  </label>
-						 <textarea name="entry.1950237509" id="entry.1950237509" rows="4" style="font-size:28px;width: 900px;height: 225px;"></textarea></h2>
-					 </div>
-			 </div>
-				 <ul class="actions">
-					<input type="submit" value="傳送訊息" class="button primary" style="font-size:20px;"/>
-				 </ul>
-				 </form>
-				 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;font-size:20px;" onload="if(submitted) {}"></iframe>
-			 </div>
-		 </div>
-
-		<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script type="text/javascript">var submitted=false;</script>
-		<script type="text/javascript">
-			$('#gform').on('submit', function(e) {
-			$('#gform *').fadeOut(2000);
-			$('#gform').prepend('您的訊息已經提交成功！');
-			});
-		</script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
+      <h1> 歡迎來到BONTA官方網站 </h1>
+      <hr>
+      <h2>產品：</h2>
+      <ol>
+         <ol>
+            <h2>環境控制系統</h2>
+			<p style="font-size: 20px;">可以透過手機APP來控制會議室環境，像是投影機、空調、燈光、DVD、智慧型電視/螢幕、布幕，甚至是音響，都可以透過手機APP來達到一鍵操作。讓您的會議室煥然一新！</p>
+         </ol>
+         <ol>
+            <h2>護士呼叫系統</h2>
+			<p style="font-size: 20px;"></p>
+         </ol>
+         <ol>
+            <h2>離床墊 (可與護士呼叫器搭配)</h2>
+			<p style="font-size: 20px;"></p>
+         </ol>
+      </ol>
+      <hr>
+      <div class="content">
+         <header>
+            <h1>聯絡與技術支援</h1>
+         </header>
+         <div>
+            <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc99RwHV7FshIBjuAdb7j3FVQoTBkgij5kvHABLdIit4jvpVg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+               <div class="fields">
+                  <div class="field half">
+                     <label for="name">
+                        <h2>姓名
+                     </label>
+                     <input type="text" name="entry.787920409" id="entry.787920409" style="font-size:28px;"/></h2>
+                  </div>
+                  <div class="field half">
+                     <label for="email">
+                        <h2>電子信箱
+                     </label>
+                     <input type="email" name="entry.909521151" id="entry.909521151" style="font-size:28px;"/></h2>
+                  </div>
+                  <div class="field">
+                     <label for="message">
+                        <h2>您的訊息  
+                     </label>
+                     <textarea name="entry.1950237509" id="entry.1950237509" rows="4" style="font-size:28px;width: 900px;height: 225px;"></textarea></h2>
+                  </div>
+               </div>
+               <ul class="actions">
+                  <input type="submit" value="傳送訊息" class="button primary" style="font-size:20px;"/>
+               </ul>
+            </form>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;font-size:20px;" onload="if(submitted) {}"></iframe>
+         </div>
+      </div>
+      <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script type="text/javascript">var submitted=false;</script>
+      <script type="text/javascript">
+         $('#gform').on('submit', function(e) {
+         $('#gform *').fadeOut(2000);
+         $('#gform').prepend('您的訊息已經提交成功！');
+         });
+      </script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
 
