@@ -9,6 +9,6 @@
 
 您有任何想要的產品嗎？請聯絡我們的客服：
 手機：0981621267
-透過Email給予我們回饋
-<form action="http://formspree.io/doortry01@gmail.com"><input type="email" name="_replyto"><textarea   name="body"></textarea><input type="submit" value="Send"></form>
+聯絡我們：
+
 
