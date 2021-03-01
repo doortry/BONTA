@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+## 歡迎來到BONTA的官網
 
-You can use the [editor on GitHub](https://github.com/doortry/BONTA/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+目前本公司的產品是
+1. 環境控制 (中央控制)
+2. 護士呼叫器
+3. 離床墊 (可與護士呼叫器搭配)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 聯絡與支援
 
-### Markdown
+您有任何想要的產品嗎？請聯絡我們的客服：
+手機：0981621267
+透過Email給予我們回饋
+<form action="http://formspree.io/doortry01@gmail.com"><input type="email" name="_replyto"><textarea   name="body"></textarea><input type="submit" value="Send"></form>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/doortry/BONTA/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
