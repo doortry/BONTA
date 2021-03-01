@@ -1,72 +1,579 @@
-<html>
-	<head>
-		<title>BONTA 官方網站</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!doctype html>
+<html lang="zh-TW">
+<head>
+	<meta charset="utf-8" />
+	<meta name="Author" content="VBird, 鳥哥" />
+	<meta name="Description" content="歡迎光臨鳥哥的 Linux 私房菜，這裡介紹 Linux 的相關知識喔！" />
+	<title>鳥哥的 Linux 私房菜 -- 鳥哥的 Linux 私房菜 首頁</title>
+	<style>
+	</style>
+	<link href="/include/style_2013.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!--最上方的一些連結與網站介紹 -->
+<div class="toparea">
+<span style="text-shadow: 1px 1px 2px black;">鳥哥的 Linux 私房菜</span>
+<ul>
+		<li class="topareali"><a href="#">鳥站首頁</a></li>
+		<li><a href="http://linux.vbird.org" target="_top" title="前往鳥哥的 Linux 私房菜首頁">繁體主站</a></li>
+	<li><a href="http://linux.vbird.org/linux_basic/"  title="Linux 基礎學習篇，從頭學習 Linux">基礎篇</a></li>
+	<li><a href="http://linux.vbird.org/linux_server/"  title="Linux 伺服器架設篇">伺服器</a></li>
+	<li><a href="http://linux.vbird.org/linux_enterprise/"  title="Linux 企業應用篇">企業應用</a></li>
+	<li><a href="http://linux.vbird.org/linux_desktop/"  title="Linux 桌面應用篇">桌面應用</a></li>
+	<li><a href="http://linux.vbird.org/linux_security/"  title="Linux 安全管理篇">安全管理</a></li>
+	<li><a href="http://linux.vbird.org/book/"  title="書籍勘誤">書籍勘誤</a></li>
+	<li><a href="http://linux.vbird.org/vbird/"  title="關於鳥哥的一些事情">鳥哥我</a></li>
+</ul>
+<iframe src="/online/index_2013.php" style="height: 29px; width: 150px; border:0; padding:0; margin: 0;
+		position: relative; float: right; overflow: hidden" ></iframe>
+</div>
 
-				<!-- Intro -->
-					<section class="intro">
-						<header>
-							<h1>歡迎來到BONTA官方網站</h1>
-							<p>目前的產品如下：</p>
-							<ul class="uli">
-								<li>1. 環境控制系統</li>
-								<li>2. 護士呼叫器</li>
-								<li>3. 離床墊 (可與護士呼叫器整合) </li>
-							</ul>
-						</header>
-						<div class="content">
-							<header>
-								<h1>聯絡與技術支援</h1>
-							</header>
-							<div class="span-3-25">
-								<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc99RwHV7FshIBjuAdb7j3FVQoTBkgij5kvHABLdIit4jvpVg/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">姓名</label>
-											<input type="text" name="entry.787920409" id="entry.787920409" />
-										</div>
-										<div class="field half">
-											<label for="email">電子信箱</label>
-											<input type="email" name="entry.909521151" id="entry.909521151" />
-										</div>
-										<div class="field">
-											<label for="message">您的訊息</label>
-											<textarea name="entry.1950237509" id="entry.1950237509" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="傳送訊息" class="button primary" /></li>
-									</ul>
-								</form>
-								<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-							</div>
-						</div>
-					</section>
-			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script type="text/javascript">var submitted=false;</script>
-			<script type="text/javascript">
-				$('#gform').on('submit', function(e) {
-				$('#gform *').fadeOut(2000);
-				$('#gform').prepend('您的訊息已經提交成功！');
-				});
-			</script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<!-- 正中央的 1000 像素的內容 -->
+<div class="tablearea">
+<!-- 左邊的連結東東 -->
+<div class="nav">
+	<div style="text-align:center; line-height:1; font-size: 9pt; font-family: 'Times New Roman'; color: #ff6600;
+	padding: 5px; margin: 2px;">
+		<img src="http://linux.vbird.org/cgi-bin/Count.cgi?dd=C&amp;ft=5&amp;sh=T&amp;md=8&amp;pad=Y&amp;df=vbird.dat" 
+			alt="鳥站的上線人數統計" height="26" width="110" /><br>
+		since 2002/01/01
+	</div>
+<ul>
+	<li><a href="/new_linux.php">新手建議</a></li>
+	<li><a href="/howtoread.php">開始閱讀之前</a></li>
+	<li><a href="/aboutmysite.php">網站導覽</a></li>
+	<li class="nav_more"><a href="/linux_basic">Linux 基礎文件</a>
+	<ul>
+		<li><a href="/linux_basic/">基礎文件彙整表</a></li>
+		<li><a href="/linux_basic/0105computers.php">0.計算機概論</a></li>
+		<li><a href="/linux_basic/0110whatislinux.php">1.Linux是什麼</a></li>
+		<li><a href="/linux_basic/0130designlinux.php">2.主機規劃與磁碟分割</a></li>
+		<li><a href="/linux_basic/0157installcentos7.php">3.安裝CentOS 7.x</a></li>
+		<li><a href="/linux_basic/0160startlinux.php">4.首次登入與man page</a></li>
+		<li><a href="/linux_basic/0210filepermission.php">5.檔案權限與目錄配置</a></li>
+		<li><a href="/linux_basic/0220filemanager.php">6.檔案與目錄管理</a></li>
+		<li><a href="/linux_basic/0230filesystem.php">7.磁碟與檔案系統</a></li>
+		<li><a href="/linux_basic/0240tarcompress.php">8.壓縮指令的運用</a></li>
+		<li><a href="/linux_basic/0310vi.php">9.vim程式編輯器</a></li>
+		<li><a href="/linux_basic/0320bash.php">10.認識與學習BASH</a></li>
+		<li><a href="/linux_basic/0330regularex.php">11.正規表示法與文件格式化</a></li>
+		<li><a href="/linux_basic/0340bashshell-scripts.php">12.學習shell scripts</a></li>
+		<li><a href="/linux_basic/0410accountmanager.php">13.帳號管理與ACL</a></li>
+		<li><a href="/linux_basic/0420quota.php">14.Quota, RAID, LVM</a></li>
+		<li><a href="/linux_basic/0430cron.php">15.at, crontab, anacron</a></li>
+		<li><a href="/linux_basic/0440processcontrol.php">16.程序管理與 SELinux</a></li>
+		<li><a href="/linux_basic/0560daemons.php">17.認識系統服務(daemon)</a></li>
+		<li><a href="/linux_basic/0570syslog.php">18.認識與分析登錄檔</a></li>
+		<li><a href="/linux_basic/0510osloader.php">19.開機流程模組管理與Loader</a></li>
+		<li><a href="/linux_basic/0610hardware.php">20.基礎系統設定與備份策略</a></li>
+		<li><a href="/linux_basic/0520source_code_and_tarball.php">21.原始碼與 Tarball</a></li>
+		<li><a href="/linux_basic/0520rpm_and_srpm.php">22.RPM/YUM/SRPM</a></li>
+		<li><a href="/linux_basic/0590xwindow.php">23.X-Window 設定</a></li>
+		<li><a href="/linux_basic/0540kernel.php">24.Linux 核心編譯</a></li>
+		<li>底下尚未更新</li>
+		<li><a href="/linux_basic/1010index.php">27.快速索引</a></li>
+		<li><a href="/linux_basic/1010appendix_A.php">附錄 A: GPL 條文</a></li>
+		<li><a href="/linux_basic/1010appendix_B.php">附錄 B: ext2/ext3</a></li>
+		<li><a href="/linux_basic/0140spfdisk.php">SPFDISK 範例</a></li>
+		<li><a href="/linux_basic/0150installredhat.php">安裝 RedHat 7.2</a></li>
+		<li><a href="/linux_basic/0155installmdk.php">安裝 Mandrake 9</a></li>
+		<li><a href="/linux_basic/0156installfc4.php">安裝 Fedora IV</a></li>
+		<li><a href="/linux_basic/9999questions.php">Linux 練習題</a></li>
 
-	</body>
+		<li class="nav_more"><a href="/linux_basic/centos5.php">CentOS 5.x(2009-2014)</a>
+		</li>
+
+		<li class="nav_more"><a href="/linux_basic/fc4.php">Fedora-4(2005-2008)</a>
+		</li>
+		<li class="nav_more"><a href="/linux_basic/mandrake9.0.php">Mandrake9.0(2001-2004)</a>
+		</li>
+		<li class="nav_more"><a href="/linux_basic/redhat6.1/">RH6.1文件(2001前)</a>
+		</li>
+	</ul></li>
+
+	<li class="nav_more"><a href="/linux_basic_train">Linux 基礎訓練</a>
+	<ul>
+		<li><a href="/linux_basic_train/">課程章節、授課方式、評分方式</a></li>
+		<li><a href="/linux_basic_train/unit01.php">第 01 堂課：指令列模式初探</a></li>
+		<li><a href="/linux_basic_train/unit02.php">第 02 堂課：指令下達與檔案管理</a></li>
+		<li><a href="/linux_basic_train/unit03.php">第 03 堂課：檔案管理與 vim</a></li>
+		<li><a href="/linux_basic_train/unit04.php">第 04 堂課：檔案權限與帳號管理</a></li>
+		<li><a href="/linux_basic_train/unit05.php">第 05 堂課：權限應用與程序觀察</a></li>
+		<li><a href="/linux_basic_train/unit06.php">第 06 堂課：基礎檔案系統管理</a></li>
+		<li><a href="/linux_basic_train/unit07.php">第 07 堂課：bash 與系統救援</a></li>
+		<li><a href="/linux_basic_train/practice1.php">期中練習</a></li>
+		<li><a href="/linux_basic_train/unit08.php">第 08 堂課：連續指令與資料流導向</a></li>
+		<li><a href="/linux_basic_train/unit09.php">第 09 堂課：正規表示法與 script</a></li>
+		<li><a href="/linux_basic_train/unit10.php">第 10 堂課：使用者管理與 ACL</a></li>
+		<li><a href="/linux_basic_train/unit11.php">第 11 堂課：基礎設定、壓縮、排程</a></li>
+		<li><a href="/linux_basic_train/unit12.php">第 12 堂課：軟體管理與登錄檔</a></li>
+		<li><a href="/linux_basic_train/unit13.php">第 13 堂課：服務管理與開機流程</a></li>
+		<li><a href="/linux_basic_train/unit14.php">第 14 堂課：進階檔案系統管理</a></li>
+		<li><a href="/linux_basic_train/practice2.php">期末練習</a></li>
+		<li><a href="/linux_basic_train/unit15.php">第 15 堂課：Linux系統的準備</a></li>
+	</ul></li>
+
+	<li class="nav_more"><a href="/linux_server/">Linux 架站文件</a>
+	<ul>
+		<li><a href="/linux_server/">伺服器篇文件彙整表</a></li>
+		<li><a href="/linux_server/0104mytalking.php">0. 說說笑笑談 Linux server 規劃</a></li>
+		<li><a href="/linux_server/0107cloudandvm.php">1. 小型雲系統與主機安全強化流程</a></li>
+
+
+
+		<li><a href="/linux_server/0103introduce.php">序篇</a></li>
+		<li><a href="/linux_server/0105beforeserver.php">1.架設伺服器前的準備工作</a></li>
+		<li><a href="/linux_server/0110network_basic.php">2.基礎網路概念</a></li>
+		<li><a href="/linux_server/0120intranet.php">3.區域網路設定</a></li>
+		<li><a href="/linux_server/0130internet_connect.php">4.連上 Internet</a></li>
+		<li><a href="/linux_server/0140networkcommand.php">5.Linux網路指令</a></li>
+		<li><a href="/linux_server/0150detect_network.php">6.Linux網路偵錯</a></li>
+		<li><a href="/linux_server/0210network-secure.php">7.網路安全,port限制,網路升級,SELinux</a></li>
+		<li><a href="/linux_server/0230router.php">8.路由概念與路由器</a></li>
+		<li><a href="/linux_server/0250simple_firewall.php">9.防火牆與 NAT 伺服器</a></li>
+		<li><a href="/linux_server/0270dynamic_dns.php">10.申請合法主機名稱</a></li>
+		<li><a href="/linux_server/0310telnetssh.php">11.遠端連線伺服器</a></li>
+		<li><a href="/linux_server/0340dhcp.php">12.DHCP Server</a></li>
+		<li><a href="/linux_server/0330nfs.php">13.NFS Server</a></li>
+		<li><a href="/linux_server/0430nis.php">14.NIS Server</a></li>
+		<li><a href="/linux_server/0440ntp.php">15.NTP Server</a></li>
+		<li><a href="/linux_server/0370samba.php">16.SAMBA Server</a></li>
+		<li><a href="/linux_server/0420squid.php">17.Proxy Server</a></li>
+		<li><a href="/linux_server/0460iscsi.php">18.iSCSI Server</a></li>
+		<li><a href="/linux_server/0350dns.php">19.DNS Server</a></li>
+		<li><a href="/linux_server/0360apache.php">20.WWW Server</a></li>
+		<li><a href="/linux_server/0410vsftpd.php">21.vsFTPD Server</a></li>
+		<li><a href="/linux_server/0380mail.php">22.Mail Server</a></li>
+		<li><a href="/linux_server/0450apt.php">APT/YUM Server</a></li>
+		<li><a href="/linux_server/0520openwebmail.php">OpenWebMail</a></li>
+		<li><a href="/linux_server/0600cluster.php">Cluster System</a></li>
+		<li><a href="/linux_server/1000results.php">來做練習</a></li>
+		<li class="nav_more"><a href="/linux_server/redhat6.1/">RH6.1文件(2001前)</a>
+		</li>
+		<li class="nav_more"><a href="/linux_server/redhat9.php">Red Hat 9(2002-2005)</a>
+		</li>
+		<li class="nav_more"><a href="/linux_server/centos4.php">CentOS 4(2006-2010)</a>
+		</li>
+		<li class="nav_more"><a href="/linux_server/centos5.php">CentOS 5(2010-2011)</a></li>
+	</ul></li>
+	<li class="nav_more"><a href="/linux_enterprise/">Linux 企業應用</a>
+	<ul>
+		<li><a href="/linux_enterprise/">企業應用篇彙整表</a></li>
+		<li><a href="/linux_enterprise/0110network.php">1. 區域網路軟硬體設定</a></li>
+		<li><a href="/linux_enterprise/0120installation.php">2. PXE 安裝伺服器與 kickstart</a></li>
+		<li><a href="/linux_enterprise/xen.php">Xen 虛擬機器</a></li>
+		<li><a href="/linux_enterprise/cputune.php">CPU 效能優化</a></li>
+		<li><a href="/linux_enterprise/kerberos.php">kerberos 與 NFS 加密</a></li>
+		<li><a href="/linux_enterprise/switch_10g_tune.php">10G 環境效能優化</a></li>
+	</ul></li>
+	<li class="nav_more"><a href="/linux_security/">Linux 安全管理</a>
+	<ul>
+		<li><a href="/linux_security/0420rkhunter.php">rkhunter 檢測</a></li>
+		<li><a href="/linux_security/knockd.php">knockd</a></li>
+		<li class="nav_more"><a href="/linux_security/old/">舊的安全文件</a>
+		</li>
+	</ul></li>
+	<li class="nav_more"><a href="/linux_desktop/">Linux 桌面應用</a>
+	<ul>
+		<li><a href="/linux_desktop/0110linuxbasic.php">Linux 基礎概念</a></li>
+	</ul></li>
+	<li class="nav_more"><a href="/resources.php">鳥哥彙整的資料</a>
+	<ul>
+		<li><a href="/resources.php">Linux 資料庫</a></li>
+		<li><a href="/problem">一些問題彙整</a></li>
+		<li><a href="/othersites">網路連結</a></li>
+		<li class="nav_more"><a href="/solaris/">Solaris</a>
+		</li>
+		<li class="nav_more"><a href="/apache_packages/">Apache 套件安裝</a>
+		</li>
+		<li class="nav_more"><a href="/adsl">ADSL 相關文件</a>
+		</li>
+	</ul></li>
+	<li class="nav_more"><a href="/vbird/index.php">關於鳥哥</a>
+	<ul>
+		<li><a href="/vbird/vbird3.php">Why 鳥哥?</a></li>
+		<li><a href="/vbird/vbird.php">關於鳥哥</a></li>
+		<li><a href="/vbird/vbird2.php">關於鳥哥-2</a></li>
+		<li><a href="/vbird/20070718-1.php">2007-07-xx</a></li>
+		<li><a href="/vbird/20070520.php">2007-05-20</a></li>
+		<li><a href="/vbird/20070328.php">2007-03-28</a></li>
+		<li><a href="/vbird/20060701.php">2006-07-01</a></li>
+		<li><a href="/vbird/20060122.php">2006-01-24</a></li>
+		<li><a href="/vbird/20050412.php">2005-04-12</a></li>
+		<li><a href="/vbird/20050401.php">2005-04-01</a></li>
+		<li><a href="/vbird/20041101.php">2004-11-01</a></li>
+		<li><a href="/vbird/20040829.php">2004-08-29</a></li>
+		<li><a href="/vbird/20040417.php">2004-04-17</a></li>
+		<li><a href="/vbird/20040221.php">2004-02-21</a></li>
+	</ul></li>
+	<li><a href="/somepaper">網友分享</a></li>
+	<li><a href="/faq.php">特殊問題解決</a></li>
+	<!--li><a href="/download">檔案下載中心</a></li-->
+	<li><a href="/Searching.php">網站資料搜尋</a></li>
+</ul>
+
+<p style="text-align:center; margin: 0 0 0 0 ;">
+<a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+<img style="border:0;width:66px;height:24px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+</a>
+<a href="http://validator.w3.org/check?uri=referer" target="_blank">
+<img src="http://linux.vbird.org/images/valid-html401"  style="border:0;width:66px;height:24px"
+        alt="Valid HTML 5" title="Valid HTML 5" /></a>
+</p>
+<p style="text-align:center; margin: 0 0 0 0 ; line-height:1; font-size: 9pt;color: #333333; ">
+今日 <img src="http://linux.vbird.org/cgi-bin/Count.cgi?dd=A&amp;ft=0&amp;sh=T&amp;md=5&amp;pad=Y&amp;df=linux_today.dat"
+	style="height:12px; width:60px; vertical-align:middle;" alt="人數統計" /><br />
+昨日 <img src="/linux_menu/person/yestoday.gif"
+	style="height:12px; width:60px; vertical-align:middle;" alt="人數統計" /><br />
+本月 <img src="http://linux.vbird.org/cgi-bin/Count.cgi?dd=A&amp;ft=0&amp;sh=T&amp;md=6&amp;pad=Y&amp;df=linux_month.dat"
+	style="height:12px; width:60px; vertical-align:middle;" alt="人數統計" /><br />
+上月 <img src="/linux_menu/person/lastmonth.gif" 
+	style="height:12px; width:60px; vertical-align:middle;" alt="人數統計" /><br />
+</p>
+</div>
+
+<a id="top"></a>
+<div class="mainarea">
+<div class="block1">
+<!-- 本文的檔頭部分 -->
+<h1>歡迎光臨鳥哥的 Linux 私房菜</h1>
+
+<br />
+<!-- 首頁最上方的鳥哥的相關歡迎畫面，還有關於書本的連結喔！ -->
+<table style="width: 97%; border: none; font-size: 10pt;">
+    <tr>
+	<td style="text-align:left; width: 210px">
+		<a href="#before">說在前頭</a> | <a href="#linux">關於 Linux</a><br />
+		<a href="#docs">教學文件</a> | <a href="#right">版權宣告</a><br />
+		敬請愛用 <a href="http://moztw.org/" target="_blank">firefox</a> 進行網頁瀏覽<br />
+	</td>
+	<td style="text-align:center; ">
+	    <a href="https://phorum.vbird.org/viewforum.php?f=10"
+		onmouseover="document.book1.src='book/basic/EB163_72_49x69.jpg'"
+		onfocus="document.book1.src='book/basic/EB163_72_49x69.jpg'"
+		onmouseout="document.book1.src='book/basic/EB163_3d_49x69.jpg'">
+	    <img src="book/basic/EB163_3d_49x69.jpg" style="border: 0; width: 49px; height: 69px; "
+		alt="基礎學習篇：增訂版，前往鳥哥的書籍討論區" 
+		title="基礎學習篇：增訂版，前往鳥哥的書籍討論區" id="book1" /></a>
+	    <a href="https://phorum.vbird.org/viewforum.php?f=10"
+		onmouseover="document.book2.src='book/server/EB173_72_49x69.jpg'"
+		onfocus="document.book2.src='book/server/EB173_72_49x69.jpg'"
+		onmouseout="document.book2.src='book/server/EB173_3d72_49x69.jpg'">
+	    <img src="book/server/EB173_3d72_49x69.jpg" style="border: 0; width: 49px; height: 69px; "
+		alt="伺服器架設篇，前往鳥哥的書籍討論區" 
+		title="伺服器架設篇，前往鳥哥的書籍討論區"  id="book2" /></a>
+	    <a href="https://phorum.vbird.org/viewforum.php?f=10"
+		onmouseover="document.book3.src='book/basic_II/s_EB390_4x5.jpg'"
+		onfocus="document.book3.src='book/basic_II/s_EB390_4x5.jpg'"
+		onmouseout="document.book3.src='book/basic_II/s_EB390_3d_5x7.jpg'">
+	    <img src="book/basic_II/s_EB390_3d_5x7.jpg" style="border: 0; width: 49px; height: 69px; "
+		alt="基礎學習篇：第二版，往鳥哥的書籍討論區" 
+		title="基礎學習篇：第二版，前往鳥哥的書籍討論區" id="book3" /></a>
+	    <a href="https://phorum.vbird.org/viewforum.php?f=10"
+		onmouseover="document.book4.src='book/server_II/EB488_cover_49.jpg'"
+		onfocus="document.book4.src='book/server_II/EB488_cover_49.jpg'"
+		onmouseout="document.book4.src='book/server_II/EB488_3d_5x7_49.jpg'">
+	    <img src="book/server_II/EB488_3d_5x7_49.jpg" style="border: 0; width: 49px; height: 69px; "
+		alt="伺服器架設篇：第二版，往鳥哥的書籍討論區" 
+		title="伺服器架設篇：第二版，前往鳥哥的書籍討論區" id="book4" /></a>
+	    <a href="https://phorum.vbird.org/viewforum.php?f=10"
+		onmouseover="document.book5.src='book/basic_III/ea002.jpg'"
+		onfocus="document.book5.src='book/basic_III/ea002.jpg'"
+		onmouseout="document.book5.src='book/basic_III/ea002_3d.jpg'">
+	    <img src="book/basic_III/ea002_3d.jpg" style="border: 0; width: 49px; height: 69px; "
+		alt="基礎學習篇：第三版，往鳥哥的書籍討論區" 
+		title="基礎學習篇：第三版，前往鳥哥的書籍討論區" id="book5" /></a><br />
+	    <a href="book">書籍勘誤表</a><br />
+	</td>
+	<td style="width:150px; text-align:right; ">
+		<a href="aboutmysite.php#webview"> 本站之網站導覽</a><br />
+		<a href="vbird/working.php">鳥哥的工作日誌</a><br />
+		<a href="linux_menu/favor/favority.php">昨日最熱門閱讀</a><br />
+		<a href="linux_menu/www_count/">文件瀏覽統計表</a><br />
+		<a href="linux_menu/person/zperson.php">本站人數統計表</a>
+	</td>
+    </tr>
+    <tr><td colspan="3" style="text-align:center">
+		<a href="Searching.php">請多利用本站之搜尋系統</a> 還有
+		<a href="https://phorum.vbird.org/viewforum.php?f=16"
+		target="_blank">鳥站文章專屬討論串</a><br />
+		<!--a href="http://freedom.mingann.info/vbird/"
+		target="_blank">離線下載打包檔案</a>(感謝 dken 兄)，與-->
+		<!--a href="http://ccw2.ocu.edu.tw/c095571/"
+		target="_blank">這裡的離線檔案</a>(感謝 Minchao 兄) 下載。<br /-->
+		<a href="http://cn.linux.vbird.org" target="_blank">鳥站簡體版</a>(感謝鳥哥學生的翻譯)
+		<!--a href="download/vbird_linux.rar">簡體離線檔案</a>(感謝大陸網友 Ewing 兄提供)<-->
+		</td></tr>
+</table>
+</div>
+
+<!-- 開始最新消息的內容說明！ -->
+<div class="block1"><div class="gototop"><a href="#top">Top</a></div>
+<h2>本站最新消息</h2>
+<table class="news">
+    <tr class="title1">
+	<td>日期</td>
+	<td>類別</td>
+	<td>內容</td></tr>
+    <tr>
+	<td>2021/02/25</td>
+	<td>公告</td>
+	<td>
+	鳥站所在場域要進行電力重整，所以會有數天的時間無法提供服務喔！很抱歉！時間分別是 2021/03/01 以及 2021/06/14 兩天喔！
+	</td></tr>
+    <tr>
+	<td>2020/09/24</td>
+	<td>公告</td>
+	<td>
+	鳥站所在場域要進行電力重整，所以會有兩天的時間無法提供服務喔！很抱歉！時間由 2020/10/3 ~ 2020/10/4 之間！
+	</td></tr>
+    <tr>
+	<td>2019/08/19</td>
+	<td>公告</td>
+	<td>
+	兩件事情宣佈一下：
+	<ul>
+		<li>暑假開始進行 http://linux.vbird.org 轉移到 https://linux.vbird.org 的任務，希望到年底，可以將全部的文章通通轉成 UTF8 編碼，
+		同時將整個版面一致化，讓它具有 RWD 的效果。所以，這個非加密的文章部份，基本上應該是不會繼續維護了！可能到年底就會開始停止供應連線喔！</li>
+		<li>討論區的維護，鳥哥一直忘記將他放行～因為之前擔心是否由於 phpBB 的問題，導致被攻擊～不過，近期以來似乎沒事了！所以，
+		今天做了個維護，處理到最新版本！希望大家不要打討論區啦！總之，討論區就又開始放行討論囉！</li>
+	</ul>
+	</td></tr>
+    <tr>
+	<td>2019/03/06</td>
+	<td>Linux</td>
+	<td>
+	處理環工空品模式的編譯，卻發生了莫名其妙的錯誤！解決的方法竟然是出奇的簡單！來瞧瞧：
+	<a href="/faq.php#20190306">編譯過程發生了 DSO 的問題與解決方法</a>。
+	</td></tr>
+    <tr>
+	<td>2019/02/11</td>
+	<td>Linux</td>
+	<td>
+	一直想要知道某些檔案有沒有被快取？我只想要知道大型檔案 (超過 10G 以上的檔案) 被快取的情況。搜尋一下， pcstat 似乎對這個問題有點答案：
+	<a href="/faq.php#20190211">使用 pcstat 看看檔案的快取情況</a>。
+	</td></tr>
+    <tr>
+	<td>2019/02/10</td>
+	<td>Linux</td>
+	<td>
+	趁著春節期間連線到實驗室進行測試，並且於夜間寫了這篇 10G 環境的效能優化，自己覺得很有幫助！希望對大家很有幫助！
+	<a href="linux_enterprise/switch_10g_tune.php">10G 效能優化</a>。
+	</td></tr>
+    <tr>
+	<td>2019/01/25</td>
+	<td>公告</td>
+	<td>
+	下個月，就是 2019/02/17 (星期日) 台灣時間 08:00 ~ 17:00 之間，鳥站所在的區域需要停電進行設備維護，屆時無法提供相關的服務喔！
+	先跟大家說個抱歉！
+	</td></tr>
+    <tr>
+	<td>2018/09/22</td>
+	<td>公告</td>
+	<td>
+	<!--近日透過大陸友人的訊息了解到，一家好像稱為『京峰教育』的補習班，以本人當初答應對方拍一張『限於該次會員使用會面打招呼』的照片，
+	一直反覆的使用於對方的招生中。在往返的對話中，鳥哥曾明確的回絕對方不願直接推薦對方的教育單位，這都有網路紀錄，需要的話鳥哥可以提出畫面證據。<br /><br />
+
+	但是不知道為何對方一直將這照片使用於招生之中，讓鳥哥感到相當的困擾。如果有朋友看到照片，請向這家京峰補習班說，
+	鳥哥的網站明確的回應，不允許使用本人的照片在該公司的任何宣傳之中！<br /><br />-->
+
+	截至目前 (2018/09/22) 為止，除了尚在洽談中的『馬哥教育』之外，本人沒有答應任何補習班的招生宣傳行為，特別在此聲明！
+	</td></tr>
+    <tr>
+	<td>2018/09/22</td>
+	<td>公告</td>
+	<td>
+	鳥哥從 2016 年寫完基礎學習第四版之後，已經有兩年的時間沒能好好的修改伺服器篇，這是為什麼呢？來跟大家解釋一下：
+	<ol>
+		<li>2016 年到 2017 年期間，努力的寫了 Linux 基礎訓練教材，同時開發線上教材與教學環境，不是只有提供自學而已，這也已經於去年集結成冊，進行發行了。</li>
+		<li>2017 年中開始，因為過去教網頁製作的教材似乎都無法滿足我自己的教學環境，因此又寫了一份網頁製作的線上教材...雖然比不上 W3C school 的豐富，
+		但至少對於初學者來說，是有一個脈絡可尋的學習方向。</li>
+		<li>2018 年初，原本已經開始撰寫伺服器第四版的內容，結果因為進行環境工程方面的計劃案，導致進度遲遲無法推展。原本這個 7, 8 月暑假要來實施寫作，
+		卻又接觸到 java 的課程需求，因此整個暑假又在寫 java 的線上教材...</li>
+	</ol>
+	因為這樣，導致鳥哥自己一事無成啊～～真是傷腦筋～
+	</td></tr>
+    <tr>
+	<td>2018/04/03</td>
+	<td>公告</td>
+	<td>
+	因為鳥站所在的地區需要進行電力維護，因此即將於 4/8 的早上 7 點開始停電到下午 18 點之間，屆時就沒有辦法提供閱讀的服務囉！
+	相當抱歉！
+	</td></tr>
+    <tr>
+	<td>2018/03/15</td>
+	<td>Linux</td>
+	<td>
+	某些 IPS 會抵擋靜態網頁...鳥站的無害文章也被抵擋了！相當有趣！底下是處理的方法，請參考囉！
+	<a href="/faq.php#20180315">避免使用 /etc/passwd 的問題</a>
+	</td></tr>
+    <tr>
+	<td>2018/01/29</td>
+	<td>Linux</td>
+	<td>
+	透過 fail2ban 可以簡單的將一些 port scan 之後嘗試猜測你密碼的連線 drop 掉！鳥哥個人覺得挺不錯用的！
+	<a href="/faq.php#20180129">使用 Fail2Ban 進行重複連線的抵擋機制</a>
+	</td></tr>
+    <tr>
+	<td>2018/01/26</td>
+	<td>Linux</td>
+	<td>
+	小型 Linux 單一 KVM host 的安裝，還有管理員態度的小整理～其實就是將基礎篇的最終訓練拿來實做出一個未來可用的環境囉！
+	<a href="/linux_server/0107cloudandvm.php">小型雲系統與主機安全強化流程</a>
+	</td></tr>
+    <tr>
+	<td>2018/01/18</td>
+	<td>Linux</td>
+	<td>
+	先來談談伺服器篇裡面的鳥哥的夢想～希望做一個小型的機房架構～希望大家能夠管理整個機房！希望大家能夠處理好企業內部的環境建置！
+	啊！好多夢啊！<a href="/linux_server/0104mytalking.php">說說笑笑談談 Linux server 的規劃</a>
+	</td></tr>
+    <tr>
+	<td>2017/12/27</td>
+	<td>公告</td>
+	<td>
+	目前鳥哥並沒有授權任何簡體版的文件網站，所有的資料都在這個網站上面，以及 cn.linux.vbird.org 上面，其他的網址都不是鳥哥授權的喔！
+	所以，請教一下，誰來告訴我，<a href="http://www.tigerup.cn/" target="_blank">這個網站</a> 是怎麼回事啊？
+	我在版權宣告裡面說了，為了閱讀方便，大家都可以隨意保留一份在自己的系統中，甚至可以拿來作為教學講義，鳥哥也不介意。不過，
+	整個網站給我備份過去，再改成簡體，這個似乎比較不道德吧？連出處也沒有說明...
+	</td></tr>
+    <tr>
+	<td>2017/12/01</td>
+	<td>Linux</td>
+	<td>
+	來！來！來！最新大專用書，含有 KVM 的設定檔以及 images 的教學方案，不要花錢的請看<a href="/linux_basic_train">網頁</a>，要花錢的請看書籍： 
+	<a href="http://books.gotop.com.tw/v_AEA000400" target="_blank">http://books.gotop.com.tw/v_AEA000400</a>！希望對大家學習有幫助！
+	</td></tr>
+    <tr>
+	<td>2017/11/27</td>
+	<td>Linux</td>
+	<td>
+	因為上課的需要，鳥哥得要架設 kerberos 伺服器。不過，這個伺服器網路上面寫的流程都好亂！而且 CentOS 的版本因為不同的副版次，竟然有不同的啟動腳本...
+	所以，還是自己寫一篇屬於自己的流程比較妥當...來看看<a href="linux_enterprise/kerberos.php">kerberos 與 NFS 加密</a>吧！
+	</td></tr>
+    <tr>
+	<td>2017/11/01</td>
+	<td>Linux</td>
+	<td>
+	使用了 VLAN 在不同的 KVM host 上面進行 VM 的使用，而 VM 又再加上一層 VLAN，結果導致 VM 間可以互 ping 但是不能使用 ssh，相當特別。
+	解決方案可能是處理一下 MTU 就好了！<a href="/faq.php">一些常見問題 (2017/11/01)</a>
+	</td></tr>
+    <tr>
+	<td>2017/10/19</td>
+	<td>Linux</td>
+	<td>
+	讀者發信來問到怎麼在純文字環境底下更改字型～剛好鳥哥在虛擬機的終端機上也有這個問題！想說一併解決。查詢 google 一下，發現到有個名為 setfont 的有趣資料！
+	稍微玩一下，確實好玩！可以變更字型呢！真希望未來有中文字型啊！<a href="/faq.php">一些常見問題 (2017/10/19)</a>
+	</td></tr>
+    <tr>
+	<td>2017/09/14</td>
+	<td>Linux</td>
+	<td>
+	過去在 KVM hosts 想要搞不同的區域網路，可能得要有不同的網卡。而且如果只有一個 switch ，還得要設定 vlan 才行。
+	現在我們可以直接使用網卡所產生的 vlan 來模擬出 switch 的 vlan 效果，而且還是使用同一張實體網卡喔！相當有趣！
+	在教學設計上面，或者是實際將 VM 的網路隔離，相當有幫助！<a href="/faq.php">一些常見問題 (2017/09/14)</a>
+	</td></tr>
+</table>
+
+<ul><li><a href="home_news.php">看更多歷史消息</a></li></ul>
+</div>
+
+<!-- 開始說明網站成立的目的與一些相關的技巧！ -->
+<a id="before"></a>
+<div class="block1"><div class="gototop"><a href="#top">Top</a></div>
+<h2>說在前頭</h2>
+	<p>這個網頁是鳥哥自己想要寫而寫的，並沒有特殊的目的！嗯！～說穿了，
+	其實最早的目的在於『防止忘記！』哈哈！因為鳥哥的『忘性』&gt;&gt;『記性』，
+	所以動不動就會忘掉之前工作過的一些小技巧！所以，
+	為了防止好不容易才架設好的網站可以繼續的營運下去，
+	所以才興起寫一個網頁這樣的念頭！但是人算不如天算，想不到鳥哥的個性當中摻雜了太多的『雞婆』
+	成分 ( 說穿了是碎碎唸的功力啦！ ) ，所以一寫下去就囉哩八唆的寫個沒完，
+	導致這個網站也就成為今天這付模樣了！！</p>
+</div>
+
+<a id="linux"></a>
+<div class="block1"><div class="gototop"><a href="#top">Top</a></div>
+<h2>關於 Linux</h2>
+	<p>在編寫網站內容的這幾年中，也真的結識了不少前輩高人與同好朋友，
+	是在寫這個網站的額外收穫！也是鳥哥最大的收穫喔！但是，
+	也認識到了網路的危險性！！因為閒人太多了，網路實在不安全～～你知道嗎？
+	你剛架設好的主機，如果沒有防火牆的保護功能，不出兩天，一定會
+	被 Cracker 偵察！如果遇到那些想要磨練自己 cracker 功力的小毛頭，
+	呵呵！不出一個月，你的網站『肯定』會被入侵！所以，在完成一個提供網路服務的主機後，
+	請記住，你的防火牆設定了沒？！</p>
+
+	<p>此外，藉由討論區的功能，也認知到了很多朋友都有相同的
+	問題，就是『基礎沒有打好，就想要建高樓！』基本上，還是很建議大家好好的先
+	K 一下『<a href="linux_basic">Linux 基礎文件</a>』的啦！
+	先對於 Linux 有一定的瞭解之後，關於架站，嗯！那真是太簡單了！還有，
+	這兩篇文章連結也請務必要好好看一看，不但可以快速進入 Linux 的世界，在討論區提問時，
+	大家也會比較有辦法提供您正確的解決之道喔！</p>
+	<ul>
+		<li><a href="new_linux.php">新手建議</a></li>
+		<li><a href="http://phorum.vbird.org/viewtopic.php?t=96">提問的智慧</a></li>
+	</ul>
+</div>
+
+<a id="docs"></a>
+<div class="block1"><div class="gototop"><a href="#top">Top</a></div>
+<h2>關於教學文件</h2>
+	<p>因為這裡的教學文件是累積了鳥哥好幾年的資料，追溯年代，可以推到 2000 年之前，
+	加上鳥哥的學習是漸進式的，所以文章內容必定會有所疏漏，如果大家發現文章有錯誤的話，
+	請一定要<a href="mailto:vbird@mail.vbird.idv.tw">與鳥哥聯絡</a>啊！
+	此外，因為鳥哥的記憶力真的很不好，所以，文件的風格好像會一變再變，真是不好！
+	所以，鳥哥也設定了一些文章的編寫風格，可以參考<a href="howtoread.php">閱讀之前</a>
+	這一篇簡介。</p>
+
+	<p>其實，這裡的教學文件並不限於 Linux 啦，<a href="adsl">使用 ADSL 配合 Windows 2000 或者是 98 的連線分享軟體的教學</a>，
+	這裡也有喔！此外，鳥哥也會收集一些好用的資訊來跟大家分享的！嗯！大家加油的啦！</p>
+</div>
+
+<a id="right"></a>
+<div class="block1"><div class="gototop"><a href="#top">Top</a></div>
+<h2>版權宣告</h2>
+	<p>這個網站的資料 ( 除了<a href="somepaper/">讀者分享</a>之
+	外 ) 都是 <a href="mailto:vbird@mail.vbird.idv.tw">鳥哥&lt; vbird at mail dot vbird dot idv dot tw></a>
+	一字一字打出來的，書寫的過程當中參考了為數不少的文獻，我們很感謝這些原始文件的作者，
+	畢竟有他們的努力我們才有這麼優秀的文件可以查閱！基於 Open Source 的分享精神，
+	本網站的內容可以讓任何非營利的團體及個人進行非有償之目的之使用，
+	諸如引用為教學之講義等等，但必須註明文件出處且保留原作者之姓名及通訊資料。
+	任何其他目的之使用，請事先與鳥哥聯繫，本網站將保留一切預期權益。
+	站內文章如另有版權聲明，則以該聲明為準。</p>
+
+	<p>為保障使用者的閱讀權力，
+	本網站同意使用者下載或者保留網站內容在使用者之個人電腦內，但該內容除非本網站同意，
+	否則應不得使用於網際網路上。此外，嚴格禁止以類似 Teleport 之類的砍站軟體進行網站大搬家，
+	否則本站有權停止其瀏覽權～^_^</p>
+
+	<p>此外，本站所引用國內外產品商標均屬於其合法註冊之公司所有，本站所引用之網站畫面/圖片的著作權分屬各公司、
+	團體、法人或個人所有，本站文章內容所引用之部分僅作介紹，絕無侵權意圖，在此一併聲明之。</p>
+</div>
+<br /><br/>
+
+
+
+
+</div>	<!-- mainarea -->
+</div>  <!-- tablearea -->
+
+<div class="bottomarea">
+<ul>
+	<li><a href="#top" title="Top">Top</a></li>
+	<li><a href="/index_old.php" title="前往鳥哥的 Linux 私房菜首頁">前往舊站</a></li>
+	<!--li><a href="http://vbird.dic.ksu.edu.tw" target="_blank" title="前往鳥哥的 Linux 私房菜首頁">簡體主站</a></li-->
+	<li><a href="https://phorum.vbird.org/" target="_blank" title="鳥站新手討論板">討論板</a></li>
+	<li><a href="http://phorum.study-area.org/" target="_blank" title="酷！學園討論板">酷學園</a></li>
+	<li><a href="http://www.dic.ksu.edu.tw/" target="_blank" title="崑山資傳">崑山資傳</a></li>
+</ul>
+&nbsp;&nbsp; <a href="http://linux.vbird.org" target="_top" title="前往鳥哥的首頁">http://linux.vbird.org</a>
+	is designed by <a href="mailto:vbird@mail.vbird.idv.tw" title="聯絡鳥哥(我不要廣告信！)">VBird</a>
+		during 2001-2017. <!--a href="http://www.ksu.edu.tw" target="_blank">ksu.edu</a-->
+
+</div>
+
+</body>
 </html>
