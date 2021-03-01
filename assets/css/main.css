@@ -121,13 +121,13 @@ input, select, textarea {
 /* Typography */
 
 	html {
-		font-size: 18pt;
+		font-size: 24pt;
 	}
 
 		@media screen and (max-width: 1920px) {
 
 			html {
-				font-size: 13pt;
+				font-size: 19pt;
 			}
 
 		}
@@ -135,7 +135,7 @@ input, select, textarea {
 		@media screen and (max-width: 1152px) {
 
 			html {
-				font-size: 14pt;
+				font-size: 20pt;
 			}
 
 		}
@@ -143,7 +143,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			html {
-				font-size: 12pt;
+				font-size: 18pt;
 			}
 
 		}
@@ -151,7 +151,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 
 			html {
-				font-size: 11pt;
+				font-size: 17pt;
 			}
 
 		}
@@ -224,25 +224,25 @@ input, select, textarea {
 	}
 
 	h2 {
-		font-size: 1.25rem;
+		font-size: 3.5rem;
 		font-weight: 800;
 		margin: 0 0 2rem 0;
 	}
 
 	h3 {
-		font-size: 0.875rem;
+		font-size: 1.75rem;
 	}
 
 	h4 {
-		font-size: 0.875rem;
+		font-size: 1.75rem;
 	}
 
 	h5 {
-		font-size: 0.75rem;
+		font-size: 1.5rem;
 	}
 
 	h6 {
-		font-size: 0.625rem;
+		font-size: 1.35rem;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -253,20 +253,20 @@ input, select, textarea {
 		}
 
 		h2 {
-			font-size: 1.25rem;
+			font-size: 2.5rem;
 			line-height: 1.7;
 		}
 
 		h3 {
-			font-size: 0.9rem;
+			font-size: 1.8rem;
 		}
 
 		h4 {
-			font-size: 0.75rem;
+			font-size: 1.5rem;
 		}
 
 		h5 {
-			font-size: 0.675rem;
+			font-size: 1.35rem;
 		}
 
 	}
@@ -278,31 +278,31 @@ input, select, textarea {
 		}
 
 		h2 {
-			font-size: 1.125rem;
+			font-size: 2.25rem;
 		}
 
 		h3 {
-			font-size: 0.8rem;
+			font-size: 1.6rem;
 		}
 
 		h4 {
-			font-size: 0.675rem;
+			font-size: 1.35rem;
 		}
 
 		h5 {
-			font-size: 0.675rem;
+			font-size: 1.35rem;
 		}
 
 	}
 
 	sub {
-		font-size: 0.8rem;
+		font-size: 1.6rem;
 		position: relative;
 		top: 0.5rem;
 	}
 
 	sup {
-		font-size: 0.8rem;
+		font-size: 1.6rem;
 		position: relative;
 		top: -0.5rem;
 	}
@@ -1866,7 +1866,7 @@ input, select, textarea {
 		cursor: pointer;
 		display: inline-block;
 		font-family: "Raleway", Helvetica, sans-serif;
-		font-size: 0.6rem;
+		font-size: 3.5rem;
 		font-weight: 600;
 		height: 3rem;
 		letter-spacing: 0.175em;
@@ -1902,7 +1902,7 @@ input, select, textarea {
 		input[type="button"].small,
 		button.small,
 		.button.small {
-			font-size: 0.5rem;
+			font-size: 3.5rem;
 			height: 2.25rem;
 			line-height: 2.25rem;
 			padding: 0 1.25rem;
@@ -1913,7 +1913,7 @@ input, select, textarea {
 		input[type="button"].large,
 		button.large,
 		.button.large {
-			font-size: 0.7rem;
+			font-size: 3.7rem;
 			height: 3.2625rem;
 			line-height: 3.2625rem;
 			padding: 0 3.25rem;
@@ -1989,7 +1989,7 @@ input, select, textarea {
 			input[type="button"],
 			button,
 			.button {
-				font-size: 0.7rem;
+				font-size: 3.7rem;
 				height: 3.3rem;
 				line-height: 3.3rem;
 			}
@@ -1999,7 +1999,7 @@ input, select, textarea {
 				input[type="button"].large,
 				button.large,
 				.button.large {
-					font-size: 0.8rem;
+					font-size: 3.8rem;
 					height: 3.75rem;
 					line-height: 3.75rem;
 				}
@@ -2009,7 +2009,7 @@ input, select, textarea {
 				input[type="button"].small,
 				button.small,
 				.button.small {
-					font-size: 0.6rem;
+					font-size: 3.6rem;
 					height: 3rem;
 					line-height: 3rem;
 				}
@@ -2142,7 +2142,7 @@ input, select, textarea {
 		color: #000000;
 		display: block;
 		font-family: "Raleway", Helvetica, sans-serif;
-		font-size: 0.75rem;
+		font-size: 1.5rem;
 		font-weight: 600;
 		letter-spacing: 0.175em;
 		line-height: 1.75;
@@ -2207,7 +2207,7 @@ input, select, textarea {
 			cursor: pointer;
 			display: inline-block;
 			font-family: "Source Sans Pro", Helvetica, sans-serif;
-			font-size: 1rem;
+			font-size: 2rem;
 			font-weight: 300;
 			letter-spacing: 0.0375em;
 			padding-left: 2.675rem;
@@ -2236,7 +2236,7 @@ input, select, textarea {
 				border: solid 2px rgba(144, 144, 144, 0.25);
 				content: '';
 				display: inline-block;
-				font-size: 0.8rem;
+				font-size: 1.6rem;
 				height: 2.25rem;
 				left: 0;
 				line-height: 2.25rem;
